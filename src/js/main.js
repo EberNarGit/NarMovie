@@ -1,8 +1,16 @@
+//Iniciacion de la libreria axios
+const api = axios.create({
+    baseURL: 'https://api.themoviedb.org/3',
+    headers:{'Content-Type': 'application/json;charset=utf8'},
+    params: {
+        'api_key': API_KEY,
+    },
+})
+
 //Funcion que trae las peliculas en tendencia
 async function getTrendingMoviesPreview(){
-    //se llama a fetch
-    const res = await fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=' + API_KEY);
-    const data = await res.json();
+    //se llama a axios
+    const { data } = await api('/trending/movie/week');
 
     //guardamos el arreglo
     const movies = data.results;
@@ -44,9 +52,8 @@ getTrendingMoviesPreview();
 
 //Funcionpara traer peliculas por categorias
 async function getTrendingMoviesGenres(){
-    //se llama a fetch
-    const res = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=' + API_KEY);
-    const data = await res.json();
+    //se llama a axios
+    const { data } = await api('/genre/movie/list');
 
     //guardamos el arreglo
     const categories = data.genres;
