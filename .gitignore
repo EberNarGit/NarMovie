@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Secrets.js (APY KEY)
-src/js/keys.js
+src/keys
