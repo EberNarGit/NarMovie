@@ -48,7 +48,6 @@ async function getTrendingMoviesPreview(){
     const trendingPreviewMovieList = document.querySelector('#trendingPreview .trendingPreview-movieList');
     trendingPreviewMovieList.append(...nodesMovies);
 }
-getTrendingMoviesPreview();
 
 //Funcionpara traer peliculas por categorias
 async function getTrendingMoviesGenres(){
@@ -80,4 +79,3 @@ async function getTrendingMoviesGenres(){
     const sectionCategoriesConteiner = document.querySelector('#categoriesPreview .categoriesPreview-list');
     sectionCategoriesConteiner.append(...nodesCategories);
 }
-getTrendingMoviesGenres();
