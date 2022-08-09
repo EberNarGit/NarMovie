@@ -31,12 +31,25 @@ body{
   font-family: var(--font-primary);
   overflow-x: hidden;
 }
+a{
+    cursor: pointer;
+}
 
 /* Header */
 .header-container{
     padding: 20px 25px;
 
 }
+    .header-arrow{
+        z-index: 10;
+        position: relative;
+    }
+    .header-arrows{
+        z-index: 10;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+    }
     .header-title{
         font-weight: 700;
         font-size: 2.8rem;
@@ -548,7 +561,6 @@ footer {
     gap: 10px;
     background-color: var(--orange-medium);
 
-    bottom: 0;
     width: 100%;
     min-width: 320px;
 

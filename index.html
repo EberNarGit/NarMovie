@@ -18,20 +18,20 @@
         </section>    
         <form id="searchForm" class="header-searchForm">
           <input type="text" placeholder="Search a movie" />
-          <button></button>
+          <button id="searchFromBtn"></button>
         </form>
     </header>
     <!-- Trending Movies -->
     <section id="trendingPreview" class="trendingPreview-container">
         <div class="trendingPreview-header">
           <h2>Trending</h2>
-          <div class="trendingPreview-btn">
-            <a href="">see more</a>
+          <div id="trendingBtn" class="trendingPreview-btn">
+            <a>see more</a>
             <span></span>
           </div>
         </div>
-    <!-- Categories Movies -->
-        <article class="trendingPreview-movieList">
+        <!-- Movies -->
+        <article id="trendingPreview-movieList" class="trendingPreview-movieList">
           <div class="movie-container">
             <img class="movie-img" alt="Imagen de la pelicula" src="https://image.tmdb.org/t/p/w300//8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg"/>
             <div class="movie-container--info">
@@ -48,12 +48,12 @@
             </div>
           </div>
         </article>
-      </section>
-      <!-- Section categories -->
-      <section id="categoriesPreview" class="categoriesPreview-container">
+    </section>
+    <!-- Section categories -->
+    <section id="categoriesPreview" class="categoriesPreview-container">
         <h2 class="categories-title">Categories</h2>
     
-        <article class="categoriesPreview-list">
+        <article id="categoriesPreview-list" class="categoriesPreview-list">
           <!-- <div class="category-container">
             <div id="id28" class="category-icon--small"></div>
             <h3 class="category-title">Action</h3>
@@ -144,9 +144,9 @@
             <h3 class="category-title">western</h3>
           </div> -->
         </article>
-      </section>
-      <!-- Section movie-list -->
-      <section id="genericList" class="genericList-container inactive">
+    </section>
+    <!-- Section movie-list -->
+    <section id="genericList" class="genericList-container inactive">
         <div class="movie-container">
           <img class="movie-img" alt="Imagen de la pelicula" src="https://image.tmdb.org/t/p/w300//8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg"/>
           <div class="movie-container--info">
@@ -210,10 +210,11 @@
               <article class="overflow"><div><p class="overflow-text--normal">Actiooon</p></div><div><p class="overflow-text--normal">Adventure</p></div><div><p class="overflow-text--normal">Adventure</p></div></article>
           </div>
         </div>
-      </section>
+    </section>
     
-      <section id="movieDetails" class="movieDetails-container inactive">
+    <section id="movieDetails" class="movieDetails-container inactive">
         <div class="movieDetails-background">
+          <a class="header-arrows inactive" href=""><img src="./src/assets/icon/Arrow.svg" alt="Flecha para regresar"></a>
           <img class="background-image--blur" src="./src/assets/image/halo.jpg" alt="">
           <img class="background-image" src="./src/assets/image/halo.jpg" alt="">
         </div>
@@ -247,12 +248,13 @@
             <img src="./src/assets/image/halo.jpg" alt="">
           </div>
         </div>
-      </section>
+    </section>
 
-      <footer>NarMovies</footer>
+    <footer>NarMovies</footer>
       
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/keys/keys.js"></script>
+    <script src="./src/js/nodes.js"></script>
     <script src="./src/js/main.js"></script>
     <script src="./src/js/navigation.js"></script>
 </body>

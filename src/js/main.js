@@ -45,7 +45,7 @@ async function getTrendingMoviesPreview(){
         return divMovieConteiner;
     });
 
-    const trendingPreviewMovieList = document.querySelector('#trendingPreview .trendingPreview-movieList');
+    trendingPreviewMovieList.innerHTML ="";
     trendingPreviewMovieList.append(...nodesMovies);
 }
 
@@ -76,6 +76,6 @@ async function getTrendingMoviesGenres(){
         return divCategoryConteiner;
     });
 
-    const sectionCategoriesConteiner = document.querySelector('#categoriesPreview .categoriesPreview-list');
-    sectionCategoriesConteiner.append(...nodesCategories);
+    categoriesPreviewList.innerHTML = "";
+    categoriesPreviewList.append(...nodesCategories);
 }
