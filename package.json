@@ -4,7 +4,7 @@
   "description": "Pagina con informacion de peliculas a traves de la API https://www.themoviedb.org/settings/api",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d NarMovie"
   },
   "repository": {
     "type": "git",
