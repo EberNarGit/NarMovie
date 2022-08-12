@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/EberNarGit/NarMovie/issues"
   },
-  "homepage": "https://github.com/EberNarGit/NarMovie#readme"
+  "homepage": "https://github.com/EberNarGit/NarMovie#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
