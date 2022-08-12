@@ -2,7 +2,7 @@
   "name": "narmovie",
   "version": "1.0.0",
   "description": "Pagina con informacion de peliculas a traves de la API https://www.themoviedb.org/settings/api",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "deploy": "gh-pages -d src"
   },
